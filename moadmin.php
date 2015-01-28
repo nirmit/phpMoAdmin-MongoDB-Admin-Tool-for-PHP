@@ -139,13 +139,13 @@ class get {
 	 * Generates a HTML nested list from an array by recursive traversal.
 	 */
 	public function array_to_list($array){
-    	foreach( $array as $k => $v ){
+        foreach( $array as $k => $v ){
         	if( is_array( $v ) ){
             	$out .= '<li>' . $k . ': <ul>' . self::array_to_list( $v ).'</ul></li>';
         	} else {
             	$out .= '<li>' . $k . ': ' . $v . '</li>';
         	}
-    	}
+        }
     	return $out;
 	}
 
