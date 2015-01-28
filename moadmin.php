@@ -146,7 +146,7 @@ class get {
             	    $out .= '<li>' . $k . ': ' . $v . '</li>';
         	}
             }
-    	return $out;
+            return $out;
 	}
 
     /**
